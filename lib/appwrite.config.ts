@@ -10,7 +10,6 @@ export const {
   NEXT_PUBLIC_ENDPOINT: ENDPOINT,
 } = process.env;
 
-// connect appwrite with project
 
 const client = new sdk.Client();
 
