@@ -48,7 +48,7 @@ const RenderFeild = ({ field, props }: { field: any; props: Customprops }) => {
             <Input
               {...field}
               placeholder={placeholder}
-              className="shad-input border-0"
+              className="shad-input border-0 w-full"
             />
           </FormControl>
         </div>
@@ -64,9 +64,26 @@ const RenderFeild = ({ field, props }: { field: any; props: Customprops }) => {
             onChange={field.onChange}
             international
             withCountryCallingCode
-            className="input-phone"
+            className="input-phone w-full"
           />
         </FormControl>
+      );
+    case FormFeildType.DATE_PICKER:
+      return (
+        <div className="flex rounded-md  border border-dark-500 bg-dark-400">
+          {iconSrc && (
+            <Image
+              src={iconSrc}
+              alt={iconAlt || "icon"}
+              width={24}
+              height={24}
+              className="ml-2"
+            />
+          )}
+          <FormControl>
+            
+          </FormControl>
+        </div>
       );
     default:
       break;
@@ -79,7 +96,7 @@ const CustomFeild = (props: Customprops) => {
       control={control}
       name={name}
       render={({ field }) => (
-        <FormItem>
+        <FormItem className="w-full">
           {feildType !== FormFeildType.CHECKBOX && label && (
             <FormLabel>{label}</FormLabel>
           )}

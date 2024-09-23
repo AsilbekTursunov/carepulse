@@ -21,7 +21,10 @@ const SubmitButton = ({ isLoading, className, children }: ButtonPorps) => {
             width={24}
             className="animate-spin"
           />
+          <span className="ml-4">
+
           Loading...
+          </span>
         </div>
       ) : (
         children
