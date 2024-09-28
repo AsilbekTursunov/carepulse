@@ -24,6 +24,7 @@ const config = {
         input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
       },
       colors: {
+        text:'#CDCECF',
         green: {
           "500": "#24AE7C",
           "600": "#0D2A1F",
@@ -89,6 +90,10 @@ const config = {
           "5": "hsl(var(--chart-5))",
         },
       },
+      borderColor: {
+        table: '#1a1d21',
+        
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
@@ -127,6 +132,9 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
+      },
+      backgroundColor: {
+        header:'#0D0F10'
       },
       borderRadius: {
         lg: "var(--radius)",
